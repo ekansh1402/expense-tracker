@@ -17,14 +17,9 @@ function App() {
   const global = useGlobalContext();
   const { showPopup } = useGlobalContext();
 
-  const orbMemo = useMemo(() => {
-    return <Orb />;
-  }, []);
-
   return (
     <BrowserRouter>
       <div className="App" style={{ backgroundImage: `url(${bg})` }}>
-        {orbMemo}
         <div id="MainLayout">
           <Navigation />
 
