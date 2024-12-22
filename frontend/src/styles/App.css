@@ -1,0 +1,48 @@
+
+
+.App {
+  height: 100vh;
+  position: relative;
+ 
+}
+
+#MainLayout{
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+ 
+}
+
+#InnerLayout{
+    padding: 2rem 1.5rem;
+    width: 100%;
+}
+/* Custom Scrollbar */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+  height: 10px; /* Height for horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light track background */
+  border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(34, 34, 96, 1); /* Navy blue thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #343446; /* Darker navy blue on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: navy #f1f1f1; /* Navy thumb on light track */
+}

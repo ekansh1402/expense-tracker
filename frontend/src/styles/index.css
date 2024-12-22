@@ -1,0 +1,76 @@
+
+
+
+
+/* index.css */
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/* CSS Variables */
+:root {
+  --primary-color: #222260;
+  --primary-color2: rgba(34, 34, 96, 0.6);
+  --primary-color3: rgba(34, 34, 96, 0.4);
+  --color-green: #42ad00;
+  --color-grey: #aaa;
+  --color-accent: #f56692;
+  --color-delete: #ff0000;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  overflow: hidden;
+  color: rgba(34, 34, 96, 0.6);
+}
+
+/* Headings Styles */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+}
+
+/* Error Class Styles */
+.error {
+  color: red;
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Shake Animation */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
+main {
+  flex: 1;
+  background: rgba(252, 246, 249, 0.78);
+  border: 3px solid #ffffff;
+  backdrop-filter: blur(4.5px);
+  border-radius: 32px;
+  overflow-x: hidden;
+}
+
+main::-webkit-scrollbar {
+  width: 0;
+}
